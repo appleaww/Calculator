@@ -60,7 +60,7 @@ void MainWindow::math_operations()
 
 
 }
-void MainWindow::math_operations2()
+void MainWindow: :math_operations2()
 {
     QPushButton *qpb = (QPushButton*)sender();
     firstNum ui->Result->text().toDouble();
