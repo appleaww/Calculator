@@ -79,7 +79,7 @@ void MainWindow::math_operations()
     if(qpb->text() == "%"){
         double numbers = (ui->Result->text()).toDouble();
         numbers = numbers * 0.01;
-        digits QString:: number (numbers, 'g', 15);
+        digits = QString:: number (numbers, 'g', 15);
         ui->Result->setText(digits);
     }
 
@@ -118,7 +118,7 @@ void MainWindow::on_pB_res_released()
     }
     if(ui->pB_min->isChecked()) {
         result_num = firstNum - secondNum;
-        digits QString:: number (result_num, 'g', 15);
+        digits = QString:: number (result_num, 'g', 15);
         ui->Result->setText(digits);
         ui->pB_min->setChecked(false);
     
@@ -129,7 +129,7 @@ void MainWindow::on_pB_res_released()
         }
         else{
             result_num = firstNum / secondNum;
-            digits QString::number (result_num, 'g', 15);
+            digits = QString::number (result_num, 'g', 15);
             ui->Result->setText(digits);
             ui->pB_Divi->setChecked(false);
         }
@@ -137,7 +137,7 @@ void MainWindow::on_pB_res_released()
     }
     if(ui->pB_Mult->isChecked()) {
         result_num = firstNum * secondNum;
-        digits QString:: number (result_num, 'g', 15);
+        digits = QString:: number (result_num, 'g', 15);
         ui->Result->setText(digits);
         ui->pB_Mult->setChecked(false);
     }
