@@ -88,7 +88,7 @@ void MainWindow::math_operations()
 void MainWindow::math_operations2()
 {
     QPushButton *qpb = (QPushButton*)sender();
-    firstNum ui->Result->text().toDouble();
+    firstNum = ui->Result->text().toDouble();
     ui->Result->setText("");
     qpb->setChecked(true);
 }
@@ -107,11 +107,11 @@ void MainWindow::on_pB_res_released()
 {
     QString digits;
     double secondNum, result_num;
-    secondNum ui->Result->text().toDouble();
+    secondNum = ui->Result->text().toDouble();
 
     if(ui->pB_pla->isChecked()) {
     result_num = firstNum + secondNum;
-    digits QString::number(result_num, 'g', 15);
+    digits = QString::number(result_num, 'g', 15);
     ui->Result->setText(digits);
     ui->pB_pla->setChecked(false);
     
